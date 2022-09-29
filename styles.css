@@ -1,0 +1,429 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #7fa4dc;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  gap: 1.9rem;
+  font-size: 14px;
+  background-color: #222222;
+}
+
+a {
+  color: #89847a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.contenitoreTitolo {
+  width: 100%;
+  height: 200px;
+  background-image: url(https://raw.githubusercontent.com/CostaDaniele04/sitoRossi/main/banner_titolo.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  display: inline-block;
+}
+
+.contenitore1 {
+  float: left;
+  margin-right: 50px;
+  display: inline-block;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.conTit1 {
+  background-color: #ffffff;
+  opacity: 60%;
+  box-shadow: 10px 10px 5px #444343;
+  width: 770px;
+}
+
+.conTit2 {
+  background-color: #ffffff;
+  opacity: 60%;
+  box-shadow: 10px 10px 5px #444343;
+  width: 520px;
+}
+
+.contenitore2 {
+  float: none;
+  display: inline-block;
+}
+
+.titolo {
+  font-size: 2.2em;
+  width: 790px;
+  font-weight: 350;
+  font-stretch: 50%;
+}
+
+.sottotitolo {
+  font-size: 14.5;
+  width: 525px;
+  margin-top: -35px;
+  font-stretch: 50%;
+}
+
+.center {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenitore3 {
+  float: right;
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.logoPON {
+  width: 170px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.serch-1 .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.serch-1 .searchTerm {
+  width: 100%;
+  border-style: none;
+  border-right: none;
+  padding: 5px;
+  border-radius: 3px 0 0 3px;
+  outline: none;
+  color: #000000;
+}
+.serch-1 .searchTerm:focus {
+  border-style: none;
+}
+.serch-1 .searchButton {
+  width: 50px;
+  height: 40px;
+  background: #ffffff;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  font-size: 24px;
+  border-style: solid;
+  border-width: 0px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+
+  color: #000000;
+  border-top: 50% + 10px;
+  border-left: 50%;
+}
+
+/* Carosello di foto*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  margin-top: 190px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  background-color: #000000;
+  opacity: 65%;
+  text-align: left;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bacheca {
+  background-color: #deeff6;
+  width: 1200px;
+  height: 2000px;
+  margin-top: 20px;
+}
+
+.bachecaSinistra {
+  width: 900px;
+  height: 2575px;
+  background-color: #ffffff;
+  float: left;
+}
+
+.bachecaDestra {
+  width: 300px;
+  height: 2575px;
+  background-color: #deeff6;
+  float: right;
+}
+
+.bachecaBassa {
+  width: 1200px;
+  height: 800px;
+  background-color: #deeff6;
+}
+
+.scrollButton {
+  position: fixed;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  background-color: #777777;
+  border-radius: 10px;
+  border-style: none;
+  margin-bottom: 40px;
+  margin-right: 40px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.arrow {
+  color: #ffffff;
+}
+
+.evidenza {
+  width: 100%;
+  height: 100px;
+  background-color: #279eb1;
+}
+
+.avvisi {
+  width: 100%;
+  height: 100px;
+  background-color: #279eb1;
+}
+
+.titoloTabella {
+  text-align: left;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 200;
+  background-color: #385991;
+}
+
+.titEvidenza {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.titEvidenza:hover {
+  text-decoration: underline;
+}
+
+.titAvvisi {
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+
+.sottAvvisi {
+  color: #000000;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.bachecaCentraleSinistra {
+  width: 600px;
+  height: 1800px;
+  background-color: #ffffff;
+  float: left;
+}
+
+.bachecaCentraleDestra {
+  width: 300px;
+  height: 1800px;
+  background-color: #ffffff;
+  float: right;
+}
+
+.titoloNews {
+  height: 35px;
+  width: 570px;
+  background-color: #385991;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #444343;
+}
+
+.scrittaTitoloNews {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.titoloAvvisi {
+  color: #5a89bc;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.fotoAvviso {
+  width: 200px;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #8a8a8a;
+  float: left;
+}
+
+.scrittaAvviso {
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.titoloCircolari {
+  height: 35px;
+  width: 270px;
+  background-color: #385991;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #444343;
+}
+
+.scrittaTitoloNews {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.scrittaTitoloCircolari {
+  color: #5a89bc;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.scrittaTitoloCircolari:hover {
+  text-decoration: underline;
+}
+
+.raw {
+  width: 570px;
+  color: #8a8a8a;
+  position: static;
+}
